@@ -22,8 +22,8 @@
 
 链接：
 
-- [1.75 寸产品资料](https://docs.waveshare.com/ESP32-S3-Touch-AMOLED-1.75)
-- [2.16 寸产品资料](https://www.waveshare.com/product/esp32-related/ai-chat/esp32-s3-touch-amoled-2.16.htm)
+- [1.75 寸产品资料](https://www.waveshare.com/esp32-s3-touch-amoled-1.75.htm?&aff_id=187437)
+- [2.16 寸产品资料](https://www.waveshare.com/esp32-s3-touch-amoled-2.16.htm?&aff_id=187437)
 
 ## 接话流程
 
