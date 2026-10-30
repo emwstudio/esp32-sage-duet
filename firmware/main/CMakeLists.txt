@@ -1,0 +1,37 @@
+idf_component_register(
+    SRCS
+        "app_main.cpp"
+        "audio.cpp"
+        "button.cpp"
+        "classic_shaolan_audio.cpp"
+        "conversation_client.cpp"
+        "esp_now_link.cpp"
+        "ima_adpcm.cpp"
+        "ui.cpp"
+        "wifi.cpp"
+        "active_glow.c"
+        "faces.c"
+        "font_smiley.c"
+    EMBED_FILES
+        "classic_audio_shaolan/shaolan_00.wav"
+        "classic_audio_shaolan/shaolan_01.wav"
+        "classic_audio_shaolan/shaolan_02.wav"
+        "classic_audio_shaolan/shaolan_03.wav"
+        "classic_audio_shaolan/shaolan_04.wav"
+        "classic_audio_shaolan/shaolan_05.wav"
+        "classic_audio_shaolan/shaolan_06.wav"
+        "classic_audio_shaolan/shaolan_07.wav"
+        "classic_audio_shaolan/shaolan_08.wav"
+        "classic_audio_shaolan/shaolan_09.wav"
+    INCLUDE_DIRS "."
+    REQUIRES
+        bsp_extra
+        waveshare__esp32_s3_touch_amoled_1_75
+        espressif__esp_lvgl_adapter
+        nvs_flash
+        esp_wifi
+        esp_timer
+        esp_http_client
+        cjson
+)
+

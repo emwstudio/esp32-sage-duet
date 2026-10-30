@@ -1,0 +1,51 @@
+set(SAGE_MAIN "${CMAKE_CURRENT_LIST_DIR}/../../firmware/main")
+idf_component_register(
+    SRCS
+        "app_main.cpp"
+        "button.cpp"
+        "classic_sun_audio.cpp"
+        "${SAGE_MAIN}/audio.cpp"
+        "${SAGE_MAIN}/conversation_client.cpp"
+        "${SAGE_MAIN}/esp_now_link.cpp"
+        "${SAGE_MAIN}/ui.cpp"
+        "${SAGE_MAIN}/wifi.cpp"
+        "${SAGE_MAIN}/active_glow.c"
+        "${SAGE_MAIN}/faces.c"
+        "${SAGE_MAIN}/font_smiley.c"
+    EMBED_FILES
+        "classic_audio/0.wav"
+        "classic_audio/1.wav"
+        "classic_audio/2.wav"
+        "classic_audio/3.wav"
+        "classic_audio/4.wav"
+        "classic_audio/5.wav"
+        "classic_audio/6.wav"
+        "classic_audio/7.wav"
+        "classic_audio/8.wav"
+        "classic_audio/9.wav"
+        "classic_audio/10.wav"
+        "classic_audio/11.wav"
+        "classic_audio/12.wav"
+        "classic_audio/13.wav"
+        "classic_audio/14.wav"
+        "classic_audio/15.wav"
+        "classic_audio/16.wav"
+        "classic_audio/17.wav"
+        "classic_audio/18.wav"
+        "classic_audio/19.wav"
+        "classic_audio/20.wav"
+        "classic_audio/21.wav"
+        "classic_audio/22.wav"
+    INCLUDE_DIRS "." "${SAGE_MAIN}"
+    REQUIRES
+        bsp_extra
+        waveshare__esp32_s3_touch_amoled_2_16
+        espressif__esp_lvgl_adapter
+        nvs_flash
+        esp_wifi
+        esp_timer
+        esp_http_client
+        cjson
+)
+
+target_compile_definitions(${COMPONENT_LIB} PUBLIC CONFIG_SAGE_ROLE_SUN=1)

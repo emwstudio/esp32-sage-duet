@@ -1,0 +1,20 @@
+menu "ESP32 Sage"
+config SAGE_WIFI_SSID
+    string "Wi-Fi SSID"
+    default "YourWiFi"
+config SAGE_WIFI_PASSWORD
+    string "Wi-Fi password"
+    default ""
+config SAGE_BACKEND_URL
+    string "Backend URL on the local network"
+    default "http://192.168.1.100:8000"
+config SAGE_PEER_MAC
+    string "ESP-NOW peer MAC address"
+    default "00:00:00:00:00:00"
+config SAGE_ESPNOW_CHANNEL
+    int "ESP-NOW and Wi-Fi channel"
+    default 9
+config SAGE_ROLE_SUN
+    bool "Run as the SunPet peer"
+    default n
+endmenu
