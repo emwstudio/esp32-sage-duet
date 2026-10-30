@@ -1,5 +1,7 @@
 # ESP32 Sage Duet
 
+![ESP32 Sage Duet 双板实拍](assets/esp32-sage-duet-cover.png)
+
 两块 ESP32-S3 AMOLED 小板，让艾伦和孙哥在书桌上轮流接话。
 
 按下 **PWR** 或 **BOOT**，艾伦先讲一个观点，孙哥紧接着用“太对了”回应，然后继续下一句。人物发声时会显示柔和的激活光晕和跳动画，声音结束后立即静止。
